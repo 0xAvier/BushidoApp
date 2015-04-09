@@ -1,0 +1,307 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BushidoApp.CharacterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" RenderTransformOrigin="0.24,0.323">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contient le nom de l'application et le titre de la page-->
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="Bushido App" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{Binding color}"/>
+            <TextBlock Text="" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFA89A9A"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="149*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <phone:Pivot x:Name="Pivot" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,40,0,-10" Height="754">
+                <phone:Pivot.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <!--<TextBlock x:Name="PictureText" Text="{Binding}" Foreground="{Binding Color}" Margin="0,-17,0,17"/>-->
+                            <TextBlock x:Name="PictureText" Text="{Binding}" Foreground="#FFA89A9A" Margin="0,-17,0,17"/>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </phone:Pivot.HeaderTemplate>
+
+                <!--                
+                <phone:PivotItem Header="Miniature" FontSize="96">
+                    <ViewportControl x:Name="viewportMini"  
+                ManipulationStarted="OnManipulationStarted" ManipulationDelta="OnManipulationDelta"  
+                             ManipulationCompleted="OnManipulationCompleted" ViewportChanged="viewport_ViewportChanged" Height="608" Margin="0,0,0,24">
+                        <Canvas x:Name="canvasMini">
+                            <Image x:Name="MiniImage" 
+                            RenderTransformOrigin="0,0" CacheMode="BitmapCache"
+                           ImageOpened="OnImageOpened">
+                                <Image.RenderTransform>
+                                    <ScaleTransform x:Name="xformMini"/>
+                                </Image.RenderTransform>
+                            </Image>
+                        </Canvas>
+                    </ViewportControl>
+                -->
+                <phone:PivotItem Header="Mini" Margin="10,10,12,0" FontSize="96" x:Name="miniHeader">
+                    <Image x:Name="MiniImage"  RenderTransformOrigin="0.353,0.49" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="0,0,0,10" Width="434"/>
+                    <!--   
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                    
+                    </Image>
+                            -->
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Card Front">
+                    <!--
+                    <ViewportControl x:Name="viewportFirst_1"  
+                ManipulationStarted="OnManipulationStarted" ManipulationDelta="OnManipulationDelta"  
+                             ManipulationCompleted="OnManipulationCompleted" ViewportChanged="viewport_ViewportChanged">
+                    <Canvas x:Name="canvasFirst_1">
+                        <Image x:Name="ProfileImageFirst_1" 
+                            RenderTransformOrigin="0,0" CacheMode="BitmapCache"
+                           ImageOpened="OnImageOpened">
+                            <Image.RenderTransform>
+                                <ScaleTransform x:Name="xformFirst_1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Canvas>
+                </ViewportControl>-->
+                    <!--
+                    <ViewportControl x:Name="viewportFirst_1"  
+                ManipulationStarted="OnManipulationStarted" ManipulationDelta="OnManipulationDelta"  
+                             ManipulationCompleted="OnManipulationCompleted" ViewportChanged="viewport_ViewportChanged" Height="576" RenderTransformOrigin="0.5,0.5" Margin="-3,0,3,0">
+                        <ViewportControl.RenderTransform>
+                            <CompositeTransform ScaleY="-1"/>
+                        </ViewportControl.RenderTransform>
+                        <Canvas x:Name="canvasFirst_1">
+                            <Image x:Name="ProfileImageFirst_1" 
+                            Source="C:\Users\XavierP\Documents\Visual Studio 2013\Projects\BushidoApp\BushidoApp\Resources\faction\ito\kazuhikoCard.jpg"
+                            CacheMode="BitmapCache"
+                           ImageOpened="OnImageOpened" Canvas.Left="-306" Canvas.Top="288" RenderTransformOrigin="0,0" Height="564" Width="1014">
+                                <Image.RenderTransform>
+                                    <ScaleTransform x:Name="xformFirst_1" ScaleY="-1"/>
+                                </Image.RenderTransform>
+
+                            </Image>
+                        </Canvas>
+                    </ViewportControl>
+                    -->
+                    
+                    <Image x:Name="ProfileImageFirst_1" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+                   <!--     <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+                    
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                   
+
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                    <!--<phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4" x:Name="HeaderB1">-->
+                    <Image x:Name="ProfileImageBack_1"  Margin="-370,-86,10,-86">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Front" x:Name="HeaderF2">-->
+                <phone:PivotItem Header="Card Front">
+                    <Image x:Name="ProfileImageFirst_2" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                    <!--<phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4" x:Name="HeaderB2">-->
+                    <Image x:Name="ProfileImageBack_2"  Margin="-370,-86,10,-86">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Front" x:Name="HeaderF3">-->
+                <phone:PivotItem Header="Card Front">
+                    <Image x:Name="ProfileImageFirst_3" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4" x:Name="HeaderB3">-->
+                <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                    <Image x:Name="ProfileImageBack_3"  Margin="-370,-86,10,-86">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Front" x:Name="HeaderF4">-->
+                <phone:PivotItem Header="Card Front">
+                    <Image x:Name="ProfileImageFirst_4" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4" x:Name="HeaderB4">-->
+                <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                    <Image x:Name="ProfileImageBack_4"  Margin="-370,-86,10,-86">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Front" x:Name="HeaderF5">-->
+                <phone:PivotItem Header="Card Front">
+                    <Image x:Name="ProfileImageFirst_5" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+
+                <!--<phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4" x:Name="HeaderB5">-->
+                <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                    <Image x:Name="ProfileImageBack_5"  Margin="-370,-86,10,-86">
+                        <!--
+                        <toolkit:GestureService.GestureListener>
+                            <toolkit:GestureListener
+                                PinchStarted="OnPinchStarted"
+                                PinchDelta="OnPinchDelta"/>
+                        </toolkit:GestureService.GestureListener>
+
+                        <Image.RenderTransform>
+                            <CompositeTransform
+                                ScaleX="1" ScaleY="1"
+                                TranslateX="0" TranslateY="0"/>
+                        </Image.RenderTransform>
+                        -->
+                    </Image>
+                </phone:PivotItem>
+            </phone:Pivot>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

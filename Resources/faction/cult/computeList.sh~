@@ -1,0 +1,2 @@
+for i in `ls *Card.jpg`; 
+do  echo "<character>"; echo "<name>"`basename $i C:\Users\XavierP\documents\visual studio 2013\Projects\BushidoApp\BushidoApp\Resources\faction\cult\list.xml"Card.jpg"`"</name>"; echo "<mini>"`basename $i "Card.jpg"`"Mini.jpg</mini>"; echo "<card>"$i"</card>"; echo "</character>"; done;

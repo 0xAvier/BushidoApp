@@ -1,0 +1,97 @@
+<faction>
+    <character>
+        <name>Ayako</name>
+        <mini>ayakoMini.jpg</mini>
+        <card>ayakoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Chiyo</name>
+        <mini>chiyoMini.jpg</mini>
+        <card>chiyoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Hitoshi</name>
+        <mini>hitoshiMini.jpg</mini>
+        <card>hitoshiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Itsunagi</name>
+        <mini>itsunagiMini.jpg</mini>
+        <card>itsunagiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Jade Mamba Guard</name>
+        <mini>jadeMambaGuardMini.jpg</mini>
+        <card>jadeMambaGuardCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kaihime</name>
+        <mini>kaihimeMini.jpg</mini>
+        <card>kaihimeCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kazuhiko</name>
+        <mini>kazuhikoMini.jpg</mini>
+        <card>kazuhikoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kenzo</name>
+        <mini>kenzoMini.jpg</mini>
+        <card>kenzoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Masunagi Ito</name>
+        <mini>masunagiItoMini.jpg</mini>
+        <card>masunagiItoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Naoko</name>
+        <mini>naokoMini.jpg</mini>
+        <card>naokoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Sakura</name>
+        <mini>sakuraMini.jpg</mini>
+        <card>sakuraCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Satoshi</name>
+        <mini>satoshiMini.jpg</mini>
+        <card>satoshiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Takeji</name>
+        <mini>takejiMini.jpg</mini>
+        <card>takejiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>TempleBushi</name>
+        <mini>templeBushiMini.jpg</mini>
+        <card>templeBushiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Yukio</name>
+        <mini>yukioMini.jpg</mini>
+        <card>yukioCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Koshimori</name>
+        <mini>koshimoriMini.jpg</mini>
+        <card>koshimoriCard.jpg</card>
+    </character>
+</faction>

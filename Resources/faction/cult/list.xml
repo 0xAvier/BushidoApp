@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<faction>
+    <character>
+        <name>Araka</name>
+        <mini>arakaMini.jpg</mini>
+        <card>arakaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Armoured Kairai</name>
+<!--        <mini>armouredkairaiMini.jpg</mini> -->
+        <card>armouredkairaiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Gaki</name>
+        <mini>gakiMini.jpg</mini>
+        <card>gakiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kairai Villager</name>
+        <mini>kairaivillagerMini.jpg</mini>
+        <card>kairaivillagerCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Gengo</name>
+        <mini>gengoMini.jpg</mini>
+        <card>gengoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Gok</name>
+        <mini>gokMini.jpg</mini>
+        <card>gokCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Harionago</name>
+        <mini>harionagoMini.jpg</mini>
+        <card>harionagoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ikiryo</name>
+<!--        <mini>ikiryoMini.jpg</mini> -->
+        <card>ikiryoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kairai Farmer</name>
+<!--        <mini>kairaifarmerMini.jpg</mini> -->
+        <card>kairaifarmerCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kairai Militia</name>
+<!--        <mini>kairaimilitiaMini.jpg</mini> -->
+        <card>kairaimilitiaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kato</name>
+<!--        <mini>katoMini.jpg</mini> -->
+        <card>katoCard1.jpg</card>
+        <card>katoCard2.jpg</card>
+        <card>marrionetteCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Large swarm of Rats</name>
+        <mini>largeswarmofratsMini.jpg</mini>
+        <card>largeswarmofratsCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Mo Ises</name>
+        <mini>moisesMini.jpg</mini>
+        <card>moisesCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Nezumi</name>
+        <mini>nezumiMini.jpg</mini>
+        <card>nezumihumanCard.jpg</card>
+        <card>nezumiratCard.jpg</card>
+        <card>smallswarmofRatsCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Nezumi kun</name>
+        <mini>nezumikunMini.jpg</mini>
+        <card>nezumikunCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kusatta Kairai</name>
+        <mini>kusattakairaiMini.jpg</mini>
+        <card>kusattakairaiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Shichiro</name>
+        <mini>shichiroMini.jpg</mini>
+        <card>shichiroCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Taka &amp; Wrath</name>
+        <mini>takaMini.jpg</mini>
+        <card>takaCard.jpg</card>
+        <card>wrathCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Wanyudo</name>
+        <mini>wanyudoMini.jpg</mini>
+        <card>wanyudoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Wraith</name>
+        <mini>wraithMini.jpg</mini>
+        <card>wraithCard.jpg</card>
+    </character>
+
+  <character>
+    <name>Waku</name>
+    <mini>wakuMini.jpg</mini>
+    <card>wakuCard1.jpg</card>
+    <card>wakuCard2.jpg</card>
+  </character>
+
+  <character>
+      <name>Tadao</name>
+      <mini>tadaoMini.jpg</mini>
+      <card>tadaoCard.jpg</card>
+    </character>
+
+  <character>
+      <name>Taisho &#xA;Tenbatsu</name>
+      <mini>taishoMini.jpg</mini>
+      <card>taishoCard.jpg</card>
+    </character>
+
+  <character>
+      <name>Penangglan</name>
+      <mini>penanMini.jpg</mini>
+      <card>penanCard.jpg</card>
+    </character>
+
+  <character>
+      <name>Yugio</name>
+      <mini>yugioMini.jpg</mini>
+      <card>yugioCard.jpg</card>
+    </character>
+</faction>

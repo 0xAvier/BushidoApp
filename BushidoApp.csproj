@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1799009D-E1ED-49BC-B978-B25FC74E1612}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BushidoApp</RootNamespace>
+    <AssemblyName>BushidoApp</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>BushidoApp_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>BushidoApp.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog.xaml.cs">
+      <DependentUpon>Catalog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterPage.xaml.cs">
+      <DependentUpon>CharacterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Faction.cs" />
+    <Compile Include="FactionPage.xaml.cs">
+      <DependentUpon>FactionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parsing.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic.xaml.cs">
+      <DependentUpon>Statistic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="statisticProject\diceList.cs" />
+    <Compile Include="statisticProject\dices.cs" />
+    <Compile Include="statisticProject\Output.cs" />
+    <Compile Include="statisticProject\Profile.cs" />
+    <Compile Include="statisticProject\ResultPresentation.cs" />
+    <Compile Include="statisticProject\Test.cs" />
+    <Compile Include="statisticProject\Treat.cs" />
+    <Compile Include="statisticProject\TreatList.cs" />
+    <Compile Include="statisticProject\Wound.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Catalog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CharacterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FactionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Statistic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\faction.dtd">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </None>
+    <None Include="Resources\faction\cult\.computeList.sh.swp" />
+    <None Include="Resources\faction\cult\computeList.sh~" />
+    <None Include="Resources\faction\cult\list.xml~" />
+    <None Include="Resources\faction\cult\list~" />
+    <None Include="Resources\faction\cult\resize.sh" />
+    <None Include="Resources\faction\ito\list.xml~" />
+    <None Include="Resources\faction\ito\resize.sh" />
+    <None Include="Resources\faction\prefecture\list.xml~" />
+    <None Include="Resources\faction\prefecture\resize.sh" />
+    <None Include="Resources\faction\sts\list.xml~" />
+    <None Include="Resources\faction\sts\resize.sh" />
+    <None Include="Resources\faction\temple\list.xml~" />
+    <None Include="Resources\faction\temple\resize.sh" />
+    <None Include="Resources\faction\wave\#list.xml#" />
+    <None Include="Resources\faction\wave\list.xml~" />
+    <None Include="Resources\faction\wave\resize.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="characterPage.xaml.cs.SVG" />
+    <Content Include="Image\1.jpg" />
+    <Content Include="Image\kenzo.jpg" />
+    <Content Include="Image\kenzondprofilecard.jpg" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="capture.png" />
+    <Content Include="capture2.png" />
+    <Resource Include="Resources\other\deleteWhite.png" />
+    <Content Include="Resources\faction\cult\arakaCard.jpg" />
+    <Content Include="Resources\faction\cult\arakaMini.jpg" />
+    <Content Include="Resources\faction\cult\armouredkairaiCard.jpg" />
+    <Content Include="Resources\faction\cult\gakiCard.jpg" />
+    <Content Include="Resources\faction\cult\gakiMini.jpg" />
+    <Content Include="Resources\faction\cult\gengoCard.jpg" />
+    <Content Include="Resources\faction\cult\gengoMini.jpg" />
+    <Content Include="Resources\faction\cult\gokCard.jpg" />
+    <Content Include="Resources\faction\cult\gokMini.jpg" />
+    <Content Include="Resources\faction\cult\harionagoCard.jpg" />
+    <Content Include="Resources\faction\cult\harionagoMini.jpg" />
+    <Content Include="Resources\faction\cult\ikiryoCard.jpg" />
+    <Content Include="Resources\faction\cult\kairaifarmerCard.jpg" />
+    <Content Include="Resources\faction\cult\kairaimilitiaCard.jpg" />
+    <Content Include="Resources\faction\cult\kairaivillagerCard.jpg" />
+    <Content Include="Resources\faction\cult\kairaivillagerMini.jpg" />
+    <Content Include="Resources\faction\cult\katoCard1.jpg" />
+    <Content Include="Resources\faction\cult\katoCard2.jpg" />
+    <Content Include="Resources\faction\cult\kusattakairaiCard.jpg" />
+    <Content Include="Resources\faction\cult\kusattakairaiMini.jpg" />
+    <Content Include="Resources\faction\cult\largeswarmofratsCard.jpg" />
+    <Content Include="Resources\faction\cult\largeswarmofratsMini.jpg" />
+    <Content Include="Resources\faction\cult\list.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\faction\cult\logo.png" />
+    <Content Include="Resources\faction\cult\marrionetteCard.jpg" />
+    <Content Include="Resources\faction\cult\moisesCard.jpg" />
+    <Content Include="Resources\faction\cult\moisesMini.jpg" />
+    <Content Include="Resources\faction\cult\nezumiKunCard.jpg" />
+    <Content Include="Resources\faction\cult\nezumikunMini.jpg" />
+    <Content Include="Resources\faction\cult\nezumiMini.jpg" />
+    <Content Include="Resources\faction\cult\nezumihumanCard.jpg" />
+    <Content Include="Resources\faction\cult\nezumiratCard.jpg" />
+    <Content Include="Resources\faction\cult\penanCard.jpg" />
+    <Content Include="Resources\faction\cult\penanMini.jpg" />
+    <Content Include="Resources\faction\cult\shichiroCard.jpg" />
+    <Content Include="Resources\faction\cult\shichiroMini.jpg" />
+    <Content Include="Resources\faction\cult\smallswarmofratsCard.jpg" />
+    <Content Include="Resources\faction\cult\tadaoCard.jpg" />
+    <Content Include="Resources\faction\cult\tadaoMini.jpg" />
+    <Content Include="Resources\faction\cult\taishoCard.jpg" />
+    <Content Include="Resources\faction\cult\taishoMini.jpg" />
+    <Content Include="Resources\faction\cult\takaCard.jpg" />
+    <Content Include="Resources\faction\cult\takaMini.jpg" />
+    <Content Include="Resources\faction\cult\wakuCard1.jpg" />
+    <Content Include="Resources\faction\cult\wakuCard2.jpg" />
+    <Content Include="Resources\faction\cult\wakuMini.jpg" />
+    <Content Include="Resources\faction\cult\wanyudoCard.jpg" />
+    <Content Include="Resources\faction\cult\wanyudoMini.jpg" />
+    <Content Include="Resources\faction\cult\wraithCard.jpg" />
+    <Content Include="Resources\faction\cult\wraithMini.jpg" />
+    <Content Include="Resources\faction\cult\wrathCard.jpg" />
+    <Content Include="Resources\faction\cult\yugioCard.jpg" />
+    <Content Include="Resources\faction\cult\yugioMini.jpg" />
+    <Content Include="Resources\faction\ito\akimotoCard.jpg" />
+    <Content Include="Resources\faction\ito\akimotoMini.jpg" />
+    <Content Include="Resources\faction\ito\atsukoCard.jpg" />
+    <Content Include="Resources\faction\ito\ayakoCard.jpg" />
+    <Content Include="Resources\faction\ito\ayakoMini.jpg" />
+    <Content Include="Resources\faction\ito\chiyoCard.jpg" />
+    <Content Include="Resources\faction\ito\chiyoMini.jpg" />
+    <Content Include="Resources\faction\ito\goldenSentinelCard.jpg" />
+    <Content Include="Resources\faction\ito\goldenSentinelMini.jpg" />
+    <Content Include="Resources\faction\ito\hitoshiCard.jpg" />
+    <Content Include="Resources\faction\ito\hitoshiMini.jpg" />
+    <Content Include="Resources\faction\ito\Imperial Seal_Enhancement.jpg" />
+    <Content Include="Resources\faction\ito\itsunagiCard.jpg" />
+    <Content Include="Resources\faction\ito\itsunagiMini.jpg" />
+    <Content Include="Resources\faction\ito\JadeMambaGuardCard.jpg" />
+    <Content Include="Resources\faction\ito\jademambaguardMini.jpg" />
+    <Content Include="Resources\faction\ito\kaihimeCard.jpg" />
+    <Content Include="Resources\faction\ito\kaihimeMini.jpg" />
+    <Content Include="Resources\faction\ito\kazuhikoCard.jpg" />
+    <Content Include="Resources\faction\ito\kazuhikoMini.jpg" />
+    <Content Include="Resources\faction\ito\kenzoCard.jpg" />
+    <Content Include="Resources\faction\ito\kenzoMini.jpg" />
+    <Content Include="Resources\faction\ito\list.xml" />
+    <Content Include="Resources\faction\ito\logo.png" />
+    <Content Include="Resources\faction\ito\masunagiCard.jpg" />
+    <Content Include="Resources\faction\ito\masunagiMini.jpg" />
+    <Content Include="Resources\faction\ito\mizukiCard.jpg" />
+    <Content Include="Resources\faction\ito\naokoCard.jpg" />
+    <Content Include="Resources\faction\ito\naokoMini.jpg" />
+    <Content Include="Resources\faction\ito\saburoCard.jpg" />
+    <Content Include="Resources\faction\ito\saburoMini.jpg" />
+    <Content Include="Resources\faction\ito\sakuraCard.jpg" />
+    <Content Include="Resources\faction\ito\sakuraMini.jpg" />
+    <Content Include="Resources\faction\ito\satoshiCard.jpg" />
+    <Content Include="Resources\faction\ito\satoshiMini.jpg" />
+    <Content Include="Resources\faction\ito\satsukiCard.jpg" />
+    <Content Include="Resources\faction\ito\satsukiMini.jpg" />
+    <Content Include="Resources\faction\ito\takejiCard.jpg" />
+    <Content Include="Resources\faction\ito\takejiMini.jpg" />
+    <Content Include="Resources\faction\ito\templebushiCard.jpg" />
+    <Content Include="Resources\faction\ito\templebushiMini.jpg" />
+    <Content Include="Resources\faction\ito\yatsumataCard.jpg" />
+    <Content Include="Resources\faction\ito\yatsumataMini.jpg" />
+    <Content Include="Resources\faction\ito\yukioCard.jpg" />
+    <Content Include="Resources\faction\ito\yukioMini.jpg" />
+    <Content Include="Resources\faction\prefecture\akioCard.jpg" />
+    <Content Include="Resources\faction\prefecture\akioMini.jpg" />
+    <Content Include="Resources\faction\prefecture\bikouCard.jpg" />
+    <Content Include="Resources\faction\prefecture\bikouMini.jpg" />
+    <Content Include="Resources\faction\prefecture\daisukeCard.jpg" />
+    <Content Include="Resources\faction\prefecture\daisukeMini.jpg" />
+    <Content Include="Resources\faction\prefecture\eijiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\eijigenjiMini.jpg" />
+    <Content Include="Resources\faction\prefecture\fujitakaCard.jpg" />
+    <Content Include="Resources\faction\prefecture\fujitakaMini.jpg" />
+    <Content Include="Resources\faction\prefecture\genjiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\goldenSentinelCard.jpg" />
+    <Content Include="Resources\faction\prefecture\goldenSentinelMini.jpg" />
+    <Content Include="Resources\faction\prefecture\guardsmenofryuCard.jpg" />
+    <Content Include="Resources\faction\prefecture\guardsmenofryuMini.jpg" />
+    <Content Include="Resources\faction\prefecture\haganeCard.jpg" />
+    <Content Include="Resources\faction\prefecture\haganeMini.jpg" />
+    <Content Include="Resources\faction\prefecture\hansoCard.jpg" />
+    <Content Include="Resources\faction\prefecture\hiroCard.jpg" />
+    <Content Include="Resources\faction\prefecture\isamuCard.jpg" />
+    <Content Include="Resources\faction\prefecture\isamuMini.jpg" />
+    <Content Include="Resources\faction\prefecture\jinCard.jpg" />
+    <Content Include="Resources\faction\prefecture\junichiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\junichiMini.jpg" />
+    <Content Include="Resources\faction\prefecture\katsumotoCard.jpg" />
+    <Content Include="Resources\faction\prefecture\katsumotoMini.jpg" />
+    <Content Include="Resources\faction\prefecture\list.xml" />
+    <Content Include="Resources\catalog\factionList.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\faction\prefecture\logo.png" />
+    <Content Include="Resources\faction\prefecture\madokaCard.jpg" />
+    <Content Include="Resources\faction\prefecture\madokaMini.jpg" />
+    <Content Include="Resources\faction\prefecture\matsuCard.jpg" />
+    <Content Include="Resources\faction\prefecture\matsuMini.jpg" />
+    <Content Include="Resources\faction\prefecture\mikioCard.jpg" />
+    <Content Include="Resources\faction\prefecture\mikioMini.jpg" />
+    <Content Include="Resources\faction\prefecture\minuroCard.jpg" />
+    <Content Include="Resources\faction\prefecture\mizuchiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\mizuchiMini.jpg" />
+    <Content Include="Resources\faction\prefecture\pilgrimCard.jpg" />
+    <Content Include="Resources\faction\prefecture\pilgrimMini.jpg" />
+    <Content Include="Resources\faction\prefecture\ryokoCard.jpg" />
+    <Content Include="Resources\faction\prefecture\ryokoMini.jpg" />
+    <Content Include="Resources\faction\prefecture\ryuyarimenCard.jpg" />
+    <Content Include="Resources\faction\prefecture\shuichiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\shuichiMini.jpg" />
+    <Content Include="Resources\faction\prefecture\tenchiCard.jpg" />
+    <Content Include="Resources\faction\prefecture\tenchiMini.jpg" />
+    <Content Include="Resources\faction\prefecture\yukioCard.jpg" />
+    <Content Include="Resources\faction\prefecture\yukioMini.jpg" />
+    <Content Include="Resources\faction\sts\fitiaumuaCard.jpg" />
+    <Content Include="Resources\faction\sts\fitiaumuaMini.jpg" />
+    <Content Include="Resources\faction\sts\goldenSentinelCard.jpg" />
+    <Content Include="Resources\faction\sts\goldenSentinelMini.jpg" />
+    <Content Include="Resources\faction\sts\hanamiCard.jpg" />
+    <Content Include="Resources\faction\sts\hanamiMini.jpg" />
+    <Content Include="Resources\faction\sts\harukichiCard.jpg" />
+    <Content Include="Resources\faction\sts\harukichiMini.jpg" />
+    <Content Include="Resources\faction\sts\kyoakuCard1.jpg" />
+    <Content Include="Resources\faction\sts\kyoakuCard2.jpg" />
+    <Content Include="Resources\faction\sts\kyoakuMini.jpg" />
+    <Content Include="Resources\faction\sts\list.xml" />
+    <Content Include="Resources\faction\sts\logo.png" />
+    <Content Include="Resources\faction\sts\manuCard.jpg" />
+    <Content Include="Resources\faction\sts\manuMini.jpg" />
+    <Content Include="Resources\faction\sts\nomiCard.jpg" />
+    <Content Include="Resources\faction\sts\odaCard1.jpg" />
+    <Content Include="Resources\faction\sts\odaCard2.jpg" />
+    <Content Include="Resources\faction\sts\odaCard3.jpg" />
+    <Content Include="Resources\faction\sts\odaMini.jpg" />
+    <Content Include="Resources\faction\sts\sakiCard.jpg" />
+    <Content Include="Resources\faction\sts\sakiMini.jpg" />
+    <Content Include="Resources\faction\sts\sukoshiCard.jpg" />
+    <Content Include="Resources\faction\sts\sukoshiMini.jpg" />
+    <Content Include="Resources\faction\sts\sukuratchiCard1.jpg" />
+    <Content Include="Resources\faction\sts\sukuratchiCard2.jpg" />
+    <Content Include="Resources\faction\sts\sukuratchiCard3.jpg" />
+    <Content Include="Resources\faction\sts\sukuratchiMini.jpg" />
+    <Content Include="Resources\faction\sts\tsubakiCard.jpg" />
+    <Content Include="Resources\faction\sts\tsubakiMini.jpg" />
+    <Content Include="Resources\faction\sts\wasapuCard1.jpg" />
+    <Content Include="Resources\faction\sts\wasapuCard2.jpg" />
+    <Content Include="Resources\faction\sts\wasapuMini.jpg" />
+    <Content Include="Resources\faction\sts\yukioCard.jpg" />
+    <Content Include="Resources\faction\sts\yukioMini.jpg" />
+    <Content Include="Resources\faction\sts\ZoCard.jpg" />
+    <Content Include="Resources\faction\sts\zoMini.jpg" />
+    <Content Include="Resources\faction\temple\aikoCard.jpg" />
+    <Content Include="Resources\faction\temple\aikoMini.jpg" />
+    <Content Include="Resources\faction\temple\aikotheguardian.jpg" />
+    <Content Include="Resources\faction\temple\airkamiCard.jpg" />
+    <Content Include="Resources\faction\temple\airkamiMini.jpg" />
+    <Content Include="Resources\faction\temple\akariCard.jpg" />
+    <Content Include="Resources\faction\temple\akariMini.jpg" />
+    <Content Include="Resources\faction\temple\ashinagaCard.jpg" />
+    <Content Include="Resources\faction\temple\ashinagaMini.jpg" />
+    <Content Include="Resources\faction\temple\atsukoCard.jpg" />
+    <Content Include="Resources\faction\temple\buffaloCard.jpg" />
+    <Content Include="Resources\faction\temple\buffaloMini.jpg" />
+    <Content Include="Resources\faction\temple\fishermenofRokanCard.jpg" />
+    <Content Include="Resources\faction\temple\fishermenofrokanMini.jpg" />
+    <Content Include="Resources\faction\temple\hisaoCard.jpg" />
+    <Content Include="Resources\faction\temple\hisaoMini.jpg" />
+    <Content Include="Resources\faction\temple\kawaCard.jpg" />
+    <Content Include="Resources\faction\temple\earthkamiCard.jpg" />
+    <Content Include="Resources\faction\temple\earthKamiMini.jpg" />
+    <Content Include="Resources\faction\temple\ekusaCard.jpg" />
+    <Content Include="Resources\faction\temple\firekamiCard.jpg" />
+    <Content Include="Resources\faction\temple\firekamiMini.jpg" />
+    <Content Include="Resources\faction\temple\fishermenCard.jpg" />
+    <Content Include="Resources\faction\temple\fishermenMini.jpg" />
+    <Content Include="Resources\faction\temple\hotaruCard.jpg" />
+    <Content Include="Resources\faction\temple\hotaruMini.jpg" />
+    <Content Include="Resources\faction\temple\kawaMini.jpg" />
+    <Content Include="Resources\faction\temple\kenkoCard.jpg" />
+    <Content Include="Resources\faction\temple\kintaruCard.jpg" />
+    <Content Include="Resources\faction\temple\kintaruMini.jpg" />
+    <Content Include="Resources\faction\temple\kitsunefoxCard.jpg" />
+    <Content Include="Resources\faction\temple\kitsunehumanCard.jpg" />
+    <Content Include="Resources\faction\temple\kitsuneMini.jpg" />
+    <Content Include="Resources\faction\temple\kojiCard.jpg" />
+    <Content Include="Resources\faction\temple\kojiMini.jpg" />
+    <Content Include="Resources\faction\temple\kojipackCard.jpg" />
+    <Content Include="Resources\faction\temple\list.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\faction\temple\logo.png" />
+    <Content Include="Resources\faction\temple\masterpoCard.jpg" />
+    <Content Include="Resources\faction\temple\masterpoMini.jpg" />
+    <Content Include="Resources\faction\temple\pilgrimCard.jpg" />
+    <Content Include="Resources\faction\temple\pilgrimMini.jpg" />
+    <Content Include="Resources\faction\temple\ricefarmerCard.jpg" />
+    <Content Include="Resources\faction\temple\riceFarmersCard.jpg" />
+    <Content Include="Resources\faction\temple\rikuCard.jpg" />
+    <Content Include="Resources\faction\temple\rikuMini.jpg" />
+    <Content Include="Resources\faction\temple\seijiCard.jpg" />
+    <Content Include="Resources\faction\temple\seijiMini.jpg" />
+    <Content Include="Resources\faction\temple\shisaCard.jpg" />
+    <Content Include="Resources\faction\temple\shisaMini.jpg" />
+    <Content Include="Resources\faction\temple\sojoboCard.jpg" />
+    <Content Include="Resources\faction\temple\sojoboMini.jpg" />
+    <Content Include="Resources\faction\temple\suchiroCard.jpg" />
+    <Content Include="Resources\faction\temple\suchiroMini.jpg" />
+    <Content Include="Resources\faction\temple\theguardianCard.jpg" />
+    <Content Include="Resources\faction\temple\tsutsumiCard.jpg" />
+    <Content Include="Resources\faction\temple\tsutsumiMini.jpg" />
+    <Content Include="Resources\faction\temple\wallofwaterCard.jpg" />
+    <Content Include="Resources\faction\temple\waterkamiCard.jpg" />
+    <Content Include="Resources\faction\temple\yumiCard.jpg" />
+    <Content Include="Resources\faction\wave\alphaCard.jpg" />
+    <Content Include="Resources\faction\wave\alphaMini.jpg" />
+    <Content Include="Resources\faction\wave\bakemonoarcherCard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonoarchersCard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonobeatersCard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonobushiCard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonobushindprofilecard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonohordeCard.jpg" />
+    <Content Include="Resources\faction\wave\bakemonoMini.jpg" />
+    <Content Include="Resources\faction\wave\bakemonospearmenCard.jpg" />
+    <Content Include="Resources\faction\wave\bobaCard.jpg" />
+    <Content Include="Resources\faction\wave\bobaMini.jpg" />
+    <Content Include="Resources\faction\wave\bobataCard.jpg" />
+    <Content Include="Resources\faction\wave\bobataMini.jpg" />
+    <Content Include="Resources\faction\wave\giantcavebatCard.jpg" />
+    <Content Include="Resources\faction\wave\giantcavebatMini.jpg" />
+    <Content Include="Resources\faction\wave\junCard.jpg" />
+    <Content Include="Resources\faction\wave\junMini.jpg" />
+    <Content Include="Resources\faction\wave\kaiheiCard.jpg" />
+    <Content Include="Resources\faction\wave\kaiheiCard2.jpg" />
+    <Content Include="Resources\faction\wave\kanoCard.jpg" />
+    <Content Include="Resources\faction\wave\kanoMini.jpg" />
+    <Content Include="Resources\faction\wave\kemonoCard.jpg" />
+    <Content Include="Resources\faction\wave\kemonoMini.jpg" />
+    <Content Include="Resources\faction\wave\list.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\faction\wave\logo.png" />
+    <Content Include="Resources\faction\wave\logo2.png" />
+    <Content Include="Resources\faction\wave\nianCard.jpg" />
+    <Content Include="Resources\faction\wave\nianMini.jpg" />
+    <Content Include="Resources\faction\wave\okinaCard.jpg" />
+    <Content Include="Resources\faction\wave\okinaMini.jpg" />
+    <Content Include="Resources\faction\wave\onislaveCard.jpg" />
+    <Content Include="Resources\faction\wave\onislaveMini.jpg" />
+    <Content Include="Resources\faction\wave\taishoCard.jpg" />
+    <Content Include="Resources\faction\wave\taishoMini.jpg" />
+    <Content Include="Resources\faction\wave\trapengCard.jpg" />
+    <Content Include="Resources\faction\wave\trapengMini.jpg" />
+    <Content Include="Resources\faction\wave\tribalbruteCard.jpg" />
+    <Content Include="Resources\faction\wave\tribalbruteMini.jpg" />
+    <Content Include="Resources\faction\wave\ukkangCard.jpg" />
+    <Content Include="Resources\faction\wave\ukkangMini.jpg" />
+    <Content Include="Resources\faction\wave\ushiCard.jpg" />
+    <Content Include="Resources\faction\wave\wakaCard.jpg" />
+    <Content Include="Resources\faction\wave\wakaMini.jpg" />
+    <Content Include="Resources\faction\wave\wuzangCard.jpg" />
+    <Content Include="Resources\faction\wave\wuzangMini.jpg" />
+    <Content Include="Resources\faction\wave\yushaCard.jpg" />
+    <Content Include="Resources\faction\wave\yushaMini.jpg" />
+    <Content Include="Resources\faction\wave\zubaCard.jpg" />
+    <Content Include="Resources\faction\wave\zungCard.jpg" />
+    <Content Include="Resources\faction\wave\zungMini.jpg" />
+    <Content Include="logo.jpg" />
+    <Content Include="logo.png" />
+    <Content Include="Resources\other\deleteDark.png" />
+    <Content Include="TODO.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Content Include="YinYang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.en.resx" />
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,37 @@
+﻿Rendre code propre
+	-nom variable
+	-coding style
+
+Perf
+
+Style
+	(~Logo fond transparent) -> 
+		Logo de faction passe très mal en fond noir
+		Logo de catalogue passe correct
+		Carré noir passe mal sur blanc
+		Aucun problème fond blanc
+
+	Logo App
+
+Données procédure vérification
+	Vérif nom (espacement, majuscule, titre ("ito"))
+	Groupement
+	Mini - Carte 
+
+Données W14
+	DL mini + cartes
+
+TODO App
+	Design ->
+		Supprimer treats ()
+
+	TEST
+
+	Treats ->
+		Progra Defensive (entrée treats)
+		Griser case en trop
+
+
+	Différents jets (melee, ranged, ki, sl)
+	Affichage résultat (nouvelle page, svg, graphic)
+	

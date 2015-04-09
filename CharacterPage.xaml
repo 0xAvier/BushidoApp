@@ -1,0 +1,138 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BushidoApp.CharacterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:Controls="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent" RenderTransformOrigin="0.24,0.323">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="ApplicationTitle" Text="Bushido App" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFA89A9A"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="149*"/>
+            </Grid.ColumnDefinitions>
+
+            <phone:Pivot x:Name="Pivot" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,40,0,-10" Height="754">
+                <phone:Pivot.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <TextBlock x:Name="PictureText" Text="{Binding}" Foreground="#FFA89A9A" 
+                                       Margin="0,-17,0,17"/>     
+                        </Grid>
+                    </DataTemplate>
+                </phone:Pivot.HeaderTemplate>
+
+                
+               <phone:PivotItem Header="Mini" Margin="10,10,12,0" FontSize="96" x:Name="miniHeader">
+                    <ViewportControl x:Name="viewport"  ManipulationStarted="OnManipulationStarted" 
+                                ManipulationDelta="OnManipulationDelta"  
+                                ManipulationCompleted="OnManipulationCompleted" 
+                                ViewportChanged="viewport_ViewportChanged">
+                        <Canvas x:Name="canvas">
+
+                            <Image x:Name="MiniImage"  RenderTransformOrigin="0.353,0.49" 
+                                HorizontalAlignment="Center" Stretch="Uniform" Margin="0,0,0,10" 
+                                   VerticalAlignment="Bottom"
+                               CacheMode="BitmapCache"
+                                ImageOpened="OnImageOpened">
+                                <!--Width="434"-->
+                                <!-- RenderTransformOrigin="0,0"-->
+                                <Image.RenderTransform>
+                                    <ScaleTransform x:Name="xform"/>
+                                </Image.RenderTransform>
+
+                            </Image>
+
+                        </Canvas>
+                    </ViewportControl>
+                </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Front">
+
+                            <Image x:Name="ProfileImageFirst_1" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+
+                            </Image>
+
+
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                            <Image x:Name="ProfileImageBack_1"  Margin="-370,-86,10,-86">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Front">
+                            <Image x:Name="ProfileImageFirst_2" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                            <Image x:Name="ProfileImageBack_2"  Margin="-370,-86,10,-86">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Front">
+                            <Image x:Name="ProfileImageFirst_3" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                            <Image x:Name="ProfileImageBack_3"  Margin="-370,-86,10,-86">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Front">
+                            <Image x:Name="ProfileImageFirst_4" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                            <Image x:Name="ProfileImageBack_4"  Margin="-370,-86,10,-86">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Front">
+                            <Image x:Name="ProfileImageFirst_5" RenderTransformOrigin="0.589,0.486" HorizontalAlignment="Center" Stretch="UniformToFill" Margin="16,-2,-44,18" Width="460" Height="553">
+
+                            </Image>
+                        </phone:PivotItem>
+
+                        <phone:PivotItem Header="Card Back" Margin="12,28,12,0" FontSize="4">
+                            <Image x:Name="ProfileImageBack_5"  Margin="-370,-86,10,-86">
+
+                            </Image>
+
+
+                        </phone:PivotItem>
+            </phone:Pivot>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

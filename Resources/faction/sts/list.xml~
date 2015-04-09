@@ -1,0 +1,75 @@
+
+<faction>
+    <character>
+        <name>Fitiaumua</name>
+        <mini>fitiaumuaMini.jpg</mini>
+        <card>fitiaumuaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Harukichi</name>
+        <mini>harukichiMini.jpg</mini>
+        <card>harukichiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kyoaku-Han</name>
+        <mini>kyoaku-HanMini.jpg</mini>
+        <card>kyoaku-HanCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kyoaku-HanCrowbowman</name>
+        <mini>kyoaku-HanCrowbowmanMini.jpg</mini>
+        <card>kyoaku-HanCrowbowmanCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Manu</name>
+        <mini>manuMini.jpg</mini>
+        <card>manuCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Senpu</name>
+        <mini>senpuMini.jpg</mini>
+        <card>senpuCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Sukuratchi</name>
+        <mini>sukuratchiMini.jpg</mini>
+        <card>sukuratchiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tsubaki</name>
+        <mini>tsubakiMini.jpg</mini>
+        <card>tsubakiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>WakusaAkuma</name>
+        <mini>wakusaAkumaMini.jpg</mini>
+        <card>wakusaAkumaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Wasapu</name>
+        <mini>wasapuMini.jpg</mini>
+        <card>wasapuCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Yukiokoshimori</name>
+        <mini>yukiokoshimoriMini.jpg</mini>
+        <card>yukiokoshimoriCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Zo</name>
+        <mini>zoMini.jpg</mini>
+        <card>zoCard.jpg</card>
+    </character>
+
+</faction>

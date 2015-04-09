@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<faction>
+    <character>
+        <name>Daisuke</name>
+        <mini>daisukeMini.jpg</mini>
+        <card>daisukeCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Eiji "&amp" Genji</name>
+        <mini>eijigenjiMini.jpg</mini>
+        <card>eijiCard.jpg</card>
+        <card>genjiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Fujitaka</name>
+        <mini>fujitakaMini.jpg</mini>
+        <card>fujitakaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Guardsmen of Ryu_</name>
+        <mini>guardsmenofRyu_Mini.jpg</mini>
+        <card>guardsmenofRyu_Card.jpg</card>
+    </character>
+
+    <character>
+        <name>Hagane</name>
+        <mini>haganeMini.jpg</mini>
+        <card>haganeCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Hanso</name>
+<!--        <mini>hansoMini.jpg</mini>-->
+        <card>hansoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Hiro</name>
+        <!-- <mini>hiroMini.jpg</mini>-->
+        <card>hiroCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Jin</name>
+<!--        <mini>jinMini.jpg</mini>-->
+        <card>jinCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Junichi</name>
+        <mini>junichiMini.jpg</mini>
+        <card>junichiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Katsumoto Takashi</name>
+        <mini>katsumotoTakashi_Mini.jpg</mini>
+        <card>katsumotoTakashi_Card.jpg</card>
+    </character>
+
+    <character>
+        <name>Madoka</name>
+        <mini>madokaMini.jpg</mini>
+        <card>madokaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Matsu</name>
+        <mini>matsuMini.jpg</mini>
+        <card>matsuCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Mikio</name>
+        <mini>mikioMini.jpg</mini>
+        <card>mikioCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Minuro</name>
+<!--        <mini>minuroMini.jpg</mini>-->
+        <card>minuroCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Mizuchi</name>
+        <mini>mizuchiMini.jpg</mini>
+        <card>mizuchiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ryoko Sha</name>
+        <mini>ryokoShaMini.jpg</mini>
+        <card>ryokoShaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ryu Yarimen</name>
+<!--        <mini>ryuYarimenMini.jpg</mini>-->
+        <card>ryuYarimenCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tenchi</name>
+        <mini>tenchiMini.jpg</mini>
+        <card>tenchiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Yukio</name>
+        <mini>yukioMini.jpg</mini>
+        <card>yukioCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Koshimori</name>
+        <mini>koshimoriPreMini.jpg</mini>
+        <card>koshimoriPreCard.jpg</card>
+    </character>
+
+</faction>

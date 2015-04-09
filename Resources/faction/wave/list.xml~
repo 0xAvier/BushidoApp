@@ -1,0 +1,115 @@
+
+<faction>
+    <character>
+        <name>Bakemono</name>
+        <mini>bakemonoMini.jpg</mini>
+        <card>bakemonoarcherCard.jpg</card>
+        <card>bakemonobeatersCard.jpg</card>
+        <card>bakemonobushiCard.jpg</card>
+        <card>bakemonospearmenCard.jpg</card>
+        <card>bakemonohordeCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Boba</name>
+        <mini>bobaMini.jpg</mini>
+        <card>bobaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Bobata</name>
+        <mini>bobataMini.jpg</mini>
+        <card>bobataCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Giant Cavebat</name>
+        <mini>giantcavebatMini.jpg</mini>
+        <card>giantcavebatCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Jun</name>
+        <mini>junMini.jpg</mini>
+        <card>junCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Oni slave</name>
+        <mini>onislaveMini.jpg</mini>
+        <card>onislaveCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kano</name>
+        <mini>kanoMini.jpg</mini>
+        <card>kanoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kemono</name>
+        <mini>kemonoMini.jpg</mini>
+        <card>kemonoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>The Nian</name>
+        <mini>nainMini.jpg</mini>
+        <card>nainCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Okina &amp; Oto</name>
+        <mini>okinaotoMini.jpg</mini>
+        <card>okinaotoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Trapeng</name>
+        <mini>trapengMini.jpg</mini>
+        <card>trapengCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tribal Brute</name>
+        <mini>tribalbruteMini.jpg</mini>
+        <card>tribalbruteCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ukkang</name>
+        <mini>ukkangMini.jpg</mini>
+        <card>ukkangCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ushi</name>
+        <mini>ushiMini.jpg</mini>
+        <card>ushiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Waka</name>
+        <mini>wakaMini.jpg</mini>
+        <card>wakaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Wuzang</name>
+        <mini>wuzangMini.jpg</mini>
+        <card>wuzangCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Zuba</name>
+<!--        <mini>zubaMini.jpg</mini>-->
+        <card>zubaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Zung-fu</name>
+        <mini>zung-fuMini.jpg</mini>
+        <card>zung-fuCard.jpg</card>
+    </character>
+
+</faction>

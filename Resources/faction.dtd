@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT faction (character+)>
+<!ELEMENT character (name, mini?, card+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT mini (#PCDATA)>
+<!ELEMENT card (#PCDATA)>

@@ -1,0 +1,94 @@
+
+<faction>
+
+  <character>
+    <name>Sukoshi Kani &amp; Nomi</name>
+    <mini>sukoshiMini.jpg</mini>
+    <card>sukoshiCard.jpg</card>
+    <card>nomiCard.jpg</card>
+  </character>
+  
+    <character>
+        <name>Fitiaumua</name>
+        <mini>fitiaumuaMini.jpg</mini>
+        <card>fitiaumuaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Harukichi</name>
+        <mini>harukichiMini.jpg</mini>
+        <card>harukichiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kyoaku-Han</name>
+        <mini>kyoakuMini.jpg</mini>
+        <card>kyoakuCard1.jpg</card>
+        <card>kyoakuCard2.jpg</card>  
+    </character>
+
+    <character>
+        <name>Manu</name>
+        <mini>manuMini.jpg</mini>
+        <card>manuCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Senpu &amp; Wasapu</name>
+        <mini>wasapuMini.jpg</mini>
+        <card>wasapuCard1.jpg</card>
+        <card>wasapuCard2.jpg</card>
+    </character>
+
+    <character>
+        <name>Sukuratchi</name>
+        <mini>sukuratchiMini.jpg</mini>
+        <card>sukuratchiCard1.jpg</card>
+        <card>sukuratchiCard2.jpg</card>
+        <card>sukuratchiCard3.jpg</card>
+    </character>
+
+    <character>
+        <name>Tsubaki</name>
+        <mini>tsubakiMini.jpg</mini>
+        <card>tsubakiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Yukio</name>
+        <mini>yukioMini.jpg</mini>
+        <card>yukioCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Old Zo</name>
+        <mini>zoMini.jpg</mini>
+        <card>zoCard.jpg</card>
+    </character>
+
+  <character>
+    <name>Saki</name>
+    <mini>sakiMini.jpg</mini>
+    <card>sakiCard.jpg</card>
+  </character>
+
+  <character>
+    <name>Golden &#xA;sentinel</name>
+    <mini>goldenSentinelMini.jpg</mini>
+    <card>goldenSentinelCard.jpg</card>
+  </character>
+
+  <character>
+    <name>Oda &amp; Tautola</name>
+    <mini>odaMini.jpg</mini>
+    <card>odaCard1.jpg</card>
+    <card>odaCard2.jpg</card>
+    <card>odaCard3.jpg</card>
+  </character>
+
+  <character>
+    <name>Hanami</name>
+    <mini>hanamiMini.jpg</mini>
+    <card>hanamiCard.jpg</card>
+  </character>
+</faction>

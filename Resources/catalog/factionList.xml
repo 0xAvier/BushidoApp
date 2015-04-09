@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<factions>
+  <faction>
+    <name>Prefecture of Ryu</name>
+    <path>Resources\\faction\\prefecture\\</path>
+  </faction>  
+    <faction>
+    <name>Temple of Ro-Kan</name>
+    <path>Resources\\faction\\temple\\</path>
+  </faction>  
+  <faction>
+    <name>Cult of Yurei</name>
+    <path>Resources\\faction\\cult\\</path>
+  </faction>  
+  <faction>
+    <name>Savage Wave</name>
+    <path>Resources\\faction\\wave\\</path>
+  </faction>  
+  <faction>
+    <name>The Ito Clan</name>
+    <path>Resources\\faction\\ito\\</path>
+  </faction>  
+<faction>
+    <name>Sylvermoon Syndicat</name>
+    <path>Resources\\faction\\sts\\</path>
+  </faction>  
+</factions>

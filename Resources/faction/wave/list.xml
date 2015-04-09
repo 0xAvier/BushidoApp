@@ -1,0 +1,138 @@
+<!DOCTYPE faction SYSTEM "../faction.dtd">
+  
+  <faction>
+    
+    
+      
+
+  <character>
+    <name>Kaihei</name>
+    <card>kaiheiCard.jpg</card>
+    <card>kaiheiCard2.jpg</card>
+  </character>
+
+  <character>
+        <name>Bakemono</name>
+        <mini>bakemonoMini.jpg</mini>
+        <card>bakemonoarcherCard.jpg</card>
+        <card>bakemonobeatersCard.jpg</card>
+        <card>bakemonobushiCard.jpg</card>
+        <card>bakemonospearmenCard.jpg</card>
+        <card>bakemonohordeCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Boba</name>
+        <mini>bobaMini.jpg</mini>
+        <card>bobaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Bobata</name>
+        <mini>bobataMini.jpg</mini>
+        <card>bobataCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Giant Cavebat</name>
+        <mini>giantcavebatMini.jpg</mini>
+        <card>giantcavebatCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Jun</name>
+        <mini>junMini.jpg</mini>
+        <card>junCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Oni slave</name>
+        <mini>onislaveMini.jpg</mini>
+        <card>onislaveCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kano</name>
+        <mini>kanoMini.jpg</mini>
+        <card>kanoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kemono &amp; Ushi</name>
+        <mini>kemonoMini.jpg</mini>
+        <card>kemonoCard.jpg</card>
+        <card>ushiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>The Nian</name>
+        <mini>nianMini.jpg</mini>
+        <card>nianCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Okina &amp; Oto</name>
+        <mini>okinaMini.jpg</mini>
+        <card>okinaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tra Peng</name>
+        <mini>trapengMini.jpg</mini>
+        <card>trapengCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tribal Brutes</name>
+        <mini>tribalbruteMini.jpg</mini>
+        <card>tribalbruteCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Uk Kang</name>
+        <mini>ukkangMini.jpg</mini>
+        <card>ukkangCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Waka</name>
+        <mini>wakaMini.jpg</mini>
+        <card>wakaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Wu Zang</name>
+        <mini>wuzangMini.jpg</mini>
+        <card>wuzangCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Zuba</name>
+<!--        <mini>zubaMini.jpg</mini>-->
+        <card>zubaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Zung Fu</name>
+        <mini>zungMini.jpg</mini>
+        <card>zungCard.jpg</card>
+    </character>
+
+  <character>
+    <name>Yusha</name>
+    <mini>yushaMini.jpg</mini>
+    <card>yushaCard.jpg</card>
+  </character>
+
+  <character>
+    <name>Kaihei Alpha</name>
+    <mini>alphaMini.jpg</mini>
+    <card>alphaCard.jpg</card>
+  </character>
+
+  <character>
+    <name>Taisho &#xA;Tenbatsu</name>
+    <mini>taishoMini.jpg</mini>
+    <card>taishoCard.jpg</card>
+  </character>
+</faction>

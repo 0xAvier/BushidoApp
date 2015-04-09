@@ -1,0 +1,129 @@
+
+<faction>
+    <character>
+        <name>Aiko "&amp" Gorilla</name>
+        <mini>aikotheguardian.jpg</mini>
+        <card>aikoCard.jpg</card>
+        <card>theguardianCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Air "&amp" Earth kami</name>
+        <mini>airkamiMini.jpg</mini>
+        <card>airkamiCard.jpg</card>
+        <card>earthkamiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Atsuko</name>
+<!--        <mini>atsukoMini.jpg</mini>-->
+        <card>atsukoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kawa no rojin</name>
+        <mini>buffaloMini.jpg</mini>
+        <card>buffaloCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Ekusa</name>
+<!--        <mini>ekusaMini.jpg</mini>-->
+        <card>ekusaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Fire "&amp" Water kami</name>
+        <mini>firekamiMini.jpg</mini>
+        <card>firekamiCard.jpg</card>
+        <card>waterkamiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Fishermen of rokan</name>
+        <mini>fishermenofrokanMini.jpg</mini>
+        <card>fishermenofrokanCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Hotaru</name>
+        <mini>hotaruMini.jpg</mini>
+        <card>hotaruCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kenko</name>
+<!--        <mini>kenkoMini.jpg</mini> -->
+        <card>kenkoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kintaru</name>
+        <mini>kintaruMini.jpg</mini>
+        <card>kintaruCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Kitsunehuman</name>
+        <mini>kitsunehumanMini.jpg</mini>
+        <card>kitsunehumanCard.jpg</card>
+        <card>kitsunefoxCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Koji "&amp" pack</name>
+        <mini>kojiMini.jpg</mini>
+        <card>kojiCard.jpg</card>
+        <card>kojipackCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Master Po</name>
+        <mini>masterpoMini.jpg</mini>
+        <card>masterpoCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Rice farmers</name>
+<!--        <mini>ricefarmersMini.jpg</mini>-->
+        <card>ricefarmersCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Riku</name>
+        <mini>rikuMini.jpg</mini>
+        <card>rikuCard.jpg</card>
+        <card>wallofwaterCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Shisa</name>
+        <mini>shisaMini.jpg</mini>
+        <card>shisaCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Sojobo</name>
+        <mini>sojoboMini.jpg</mini>
+        <card>sojoboCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Suchiro</name>
+        <mini>suchiroMini.jpg</mini>
+        <card>suchiroCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Tsutsumi</name>
+        <mini>tsutsumiMini.jpg</mini>
+        <card>tsutsumiCard.jpg</card>
+    </character>
+
+    <character>
+        <name>Yumi</name>
+<!--        <mini>yumiMini.jpg</mini>-->
+        <card>yumiCard.jpg</card>
+    </character>
+
+</faction>
