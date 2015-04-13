@@ -24,21 +24,28 @@ namespace BushidoApp
 
     public partial class MainPage : PhoneApplicationPage
     {
-
-
-        // Constructeur
+        /* 
+         * This class is the entry point of the app.
+         * Adding a "functionnality" will add a link named by Title redirecting to the XamlAdress.
+         */
+         
+        // constructor
         public MainPage()
         {
             InitializeComponent();
             List<Functionnality> item = new List<Functionnality>()
             {
+                // catalog: all the pictures & profile
                 new Functionnality {Title = "Catalog", XamlAdress = "/Catalog.xaml"},
-                new Functionnality { Title = "Dice simulator", XamlAdress = "/Statistic.xaml"},
-                new Functionnality { Title = "about", XamlAdress = "/About.xaml"},
+                // statistic simulator
+                new Functionnality {Title = "Dice simulator", XamlAdress = "/Statistic.xaml"},
+                // information about the app
+                new Functionnality {Title = "about", XamlAdress = "/About.xaml"},
             };
             MenuList.ItemsSource = item;
         }
 
+        // trigger the button_click with the redirecting function
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button from = (Button)sender;

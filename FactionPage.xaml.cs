@@ -15,41 +15,49 @@ namespace BushidoApp
     {
         Faction currentFaction { get; set; }
         int currentFactionIndex { get; set; }
+
         public FactionPage()
         {
             InitializeComponent();
         }
 
-        private void characterList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/CharacterPage.xaml?factIndex=" + currentFactionIndex + "&charIndex=" + 
-                                                characterList.SelectedIndex, UriKind.Relative));
-            characterList.SelectedItem = null;
-        }
-
+        // on page load
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             string indexStr;
             if (NavigationContext.QueryString.TryGetValue("index", out indexStr))
             {
+                // get the faction index
                 currentFactionIndex = int.Parse(indexStr);
-                currentFaction = FactionList.Factions()[int.Parse(indexStr)];
+                // get the faction corresponding to the index
+                currentFaction = FactionList.Factions()[currentFactionIndex];
+                
+                // initialize the title
                 PageTitle.Text = currentFaction.Name;
+                // fill the list
                 characterList.ItemsSource = currentFaction.Characters;
                 
-                ///BackgroundImage.ImageSource.
+                // set the background image
                 BackgroundImage.ImageSource = Image.Get(currentFaction.LogoPath);
-                
+                // set the text color 
                 ChangeColor(currentFaction.Name);
             }
             base.OnNavigatedTo(e);
         }
 
+        // change the color theme
         private void ChangeColor(string factionName)
         {
             characterList.Foreground = Faction.GetColor(currentFaction.Name);
             PageTitle.Foreground = Faction.GetColor(currentFaction.Name);
             ApplicationTitle.Foreground = Faction.GetColor(currentFaction.Name);
+        }
+
+        // on click on a character name: go to the corresponding page
+        private void characterList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/CharacterPage.xaml?factIndex=" + currentFactionIndex + "&charIndex=" +
+                                                characterList.SelectedIndex, UriKind.Relative));
         }
     }
 }

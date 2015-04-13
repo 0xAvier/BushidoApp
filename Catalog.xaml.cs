@@ -14,24 +14,28 @@ namespace BushidoApp
 {
     public partial class Catalog : PhoneApplicationPage
     {
-
+        /*
+         * This class correspond to the catalog entry.
+         * It will be automatically filled using the FactionList class.
+         */ 
         public Catalog()
         {
             InitializeComponent();
+            // initialize the faction list 
             factionList.ItemsSource = FactionList.Factions();
         }
 
+        // on selection changed
         private void factionList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = factionList.SelectedIndex;
-            
+            // fill the page with faction logo
             if (0 <= index && index < FactionList.Factions().Count)
             {
+                // fill the url
                 string Url = "/FactionPage.xaml?index=" + index;
                 NavigationService.Navigate(new Uri(Url, UriKind.Relative));
-                factionList.SelectedIndex = -1;
             }
-            
         }
     }
 }
