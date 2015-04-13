@@ -33,7 +33,6 @@ namespace BushidoApp {
             var picker = sender as ListPicker;
             if (loaded) {
                 ListPickerItem wichRoll = (ListPickerItem)toCompute.SelectedItem;
-                //*
                 if (wichRoll.Name.ToString() == "attack") {
                     attackValue.Text = "Melee dice";
                     defendValue.Text = "Defense dice";
@@ -53,7 +52,7 @@ namespace BushidoApp {
                     // wichRoll.Name.ToString() == "slTarget"
                     attackValue.Text = "Attack dice";
                     defendValue.Text = "Defense dice";
-                }//*/
+                }
             }
         }
 

@@ -5,7 +5,7 @@
     <Language code="en" />
   </Languages>
   <App xmlns="" ProductID="{1799009d-e1ed-49bc-b978-b25fc74e1612}" Title="BushidoApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="BushidoApp author" Description="! Caution: some informations in this app are outdated !&#xD;&#xA;This application is a first test of a Bushido Catalog.&#xD;&#xA;It provides most of the cards in a probably outdated version.&#xD;&#xA;&#xD;&#xA;It also includes a dice simulator to show stats about rolldice in melee, with " Publisher="BushidoApp" PublisherID="{563084c1-a38e-4d46-816c-dfe5ddfe4eba}">
-    <IconPath IsRelative="true" IsResource="false">YinYang.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">Resources\appLogo.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -19,7 +19,7 @@
     <Tokens>
       <PrimaryToken TokenID="BushidoAppToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">capture.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">capture2.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">capture2.png</BackgroundImageURI>
           <Title>BushidoApp</Title>

@@ -8,6 +8,7 @@ using System.Xml.Linq;
 
 public class Parsing
 {
+    // Get all the faction from xml file
     public static IEnumerable<XElement> ParseCatalog()
     {
         XDocument file = new XDocument();
@@ -19,6 +20,7 @@ public class Parsing
         return factions;
     }
 
+    // Get all the character from the given xml file
     public static IEnumerable<XElement> ParseFaction(string path)
     {
         XDocument file = new XDocument();
