@@ -207,14 +207,9 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="characterPage.xaml.cs.SVG" />
-    <Content Include="Image\1.jpg" />
-    <Content Include="Image\kenzo.jpg" />
-    <Content Include="Image\kenzondprofilecard.jpg" />
-    <Content Include="README_FIRST.txt" />
-    <Content Include="capture.png" />
-    <Content Include="capture2.png" />
     <Resource Include="Resources\other\deleteWhite.png" />
+    <Content Include="capture2.png" />
+    <Content Include="Resources\appLogo.png" />
     <Content Include="Resources\faction\cult\arakaCard.jpg" />
     <Content Include="Resources\faction\cult\arakaMini.jpg" />
     <Content Include="Resources\faction\cult\armouredkairaiCard.jpg" />
@@ -518,8 +513,7 @@
     <Content Include="Resources\faction\wave\zubaCard.jpg" />
     <Content Include="Resources\faction\wave\zungCard.jpg" />
     <Content Include="Resources\faction\wave\zungMini.jpg" />
-    <Content Include="logo.jpg" />
-    <Content Include="logo.png" />
+    <Content Include="Resources\other\capture2.png" />
     <Content Include="Resources\other\deleteDark.png" />
     <Content Include="TODO.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
@@ -527,7 +521,6 @@
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
-    <Content Include="YinYang.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.en.resx" />
