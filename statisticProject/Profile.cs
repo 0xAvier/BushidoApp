@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace statistics
 {
-    class Profile
+    public class Profile
     {
         // default number of simulation rolled
         int nbSimu = 1000000;

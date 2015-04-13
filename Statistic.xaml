@@ -36,7 +36,6 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
-            <!-- <Button Grid.Row="0" Content="Which stat?" Click="AddAttackerProperty" FontSize="18" HorizontalAlignment="Left"/>-->
             <toolkit:ListPicker x:Name="toCompute" SelectionChanged="Picker" Grid.Row="0">
                 <toolkit:ListPickerItem x:Name="attack" Content="Melee"/>
                 <toolkit:ListPickerItem x:Name="shoot" Content="Shoot"/>

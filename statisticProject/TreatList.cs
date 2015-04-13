@@ -8,7 +8,7 @@ namespace statistics {
 
     // This class provides an interface to manage easily all the 
     // treat during a simulation
-    class TreatList {
+    public class TreatList {
         // convention : I do not have : -1 / Do have, no number required : 0 / Do have, level of X : X
         // Attack
         public Treat Assassin { get; set; } // OK

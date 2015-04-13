@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace statistics {
 
-    class Treat {
+    public class Treat {
         // Name of the treat
         public string Name { get; set; }
         // If "Has" is set to true, the profile has the profile

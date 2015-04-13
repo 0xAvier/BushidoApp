@@ -18,50 +18,99 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media;
 
 namespace BushidoApp {
+
+    public class SimulationType {
+        /*
+        * This class handle the different simulation to do
+        */
+
+        private static Dictionary<string, string> initializeAttackDictionnary() {
+            Dictionary<string,string> d = new Dictionary<string,string>();
+            d.Add("attack", "Melee dice");
+            d.Add("shoot", "Ranged dice");
+            d.Add("slMelee", "Melee dice");
+            d.Add("slRanged", "Ranged dice");
+            d.Add("slOpposed", "Attack dice");
+            d.Add("slTarget", "Attack dice");
+
+            return d;
+        }
+
+        private static Dictionary<string, string> initializeDefenseDictionnary() {
+            Dictionary<string,string> d = new Dictionary<string,string>();
+            d.Add("attack", "Defence dice");
+            d.Add("shoot", "Difficulty dice");
+            d.Add("slMelee", "Defense dice");
+            d.Add("slRanged", "Difficulty dice");
+            d.Add("slOpposed", "Defense dice");
+            d.Add("slTarget", "Defense dice");
+
+            return d;
+        }
+
+        static public Dictionary<string, string> attackTextDictionnary = initializeAttackDictionnary();
+        static public Dictionary<string, string> defenseTextDictionnary = initializeDefenseDictionnary();
+
+        static public double[] computeResult(Profile attacker, Profile defender, string simulationType, int nbRoll) {
+            double[] result;    
+
+            if (simulationType == "attack") {   
+                result = ResultPresentation.Integral(attacker.Attack(defender, max: nbRoll));
+            } else if (simulationType == "shoot") {
+                // here defenceDice is used to have the difficulty of the test
+                result = ResultPresentation.Integral(attacker.Shoot(defender, defender.DefenceDice, nbRoll));
+            } else if (simulationType == "slMelee") {
+                result = ResultPresentation.Integral(attacker.SuccessLevel_Melee(defender, max: nbRoll));
+            } else if (simulationType == "slRanged") {
+                // here defenceDice is used to have the difficulty of the test
+                result = ResultPresentation.Integral(attacker.SuccessLevel_Ranged(defender.DefenceDice, max: nbRoll));
+            } else if (simulationType == "slOpposed") {
+                result = ResultPresentation.Integral(attacker.SuccessLevel_Opposed(defender, max: nbRoll));
+            } else {
+                // "slTarget"
+                result = ResultPresentation.Integral(attacker.SuccessLevel_Opposed(defender, max: nbRoll));
+            }
+
+            return result;
+        }
+    }
+
     public partial class Statistic : PhoneApplicationPage, INotifyPropertyChanged {
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged(String propertyName) {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (null != handler) {
-                handler(this, new PropertyChangedEventArgs(propertyName));
+                handler(this, 
+                    new PropertyChangedEventArgs(propertyName));
             }
         }
 
-        private void Picker(object sender, SelectionChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var picker = sender as ListPicker;
-            if (loaded) {
-                ListPickerItem wichRoll = (ListPickerItem)toCompute.SelectedItem;
-                if (wichRoll.Name.ToString() == "attack") {
-                    attackValue.Text = "Melee dice";
-                    defendValue.Text = "Defense dice";
-                } else if (wichRoll.Name.ToString() == "shoot") {
-                    attackValue.Text = "Ranged dice";
-                    defendValue.Text = "Difficulty";
-                } else if (wichRoll.Name.ToString() == "slMelee") {
-                    attackValue.Text = "Melee dice";
-                    defendValue.Text = "Defense dice";
-                } else if (wichRoll.Name.ToString() == "slRanged") {
-                    attackValue.Text = "Ranged dice";
-                    defendValue.Text = "Difficulty";
-                } else if (wichRoll.Name.ToString() == "slOpposed") {
-                    attackValue.Text = "Attack dice";
-                    defendValue.Text = "Defense dice";
-                } else {
-                    // wichRoll.Name.ToString() == "slTarget"
-                    attackValue.Text = "Attack dice";
-                    defendValue.Text = "Defense dice";
-                }
-            }
+            NavigationService.GoBack();
         }
 
-        private bool NotifyPropertyChanged<T>(ref T variable, T valeur, [CallerMemberName] string nomPropriete = null) {
+        private bool NotifyPropertyChanged<T>(ref T variable, T valeur, [CallerMemberName] string nomPropriete = null)
+        {
             if (object.Equals(variable, valeur)) return false;
 
             variable = valeur;
             NotifyPropertyChanged(nomPropriete);
             return true;
+        }
+
+        // handle the modification of selection for the simulation type (attack / shoot / etc...)
+        private void Picker(object sender, SelectionChangedEventArgs e)
+        {
+            if (loaded) {
+                ListPickerItem whichRoll = (ListPickerItem)toCompute.SelectedItem;
+                string simulationType = whichRoll.Name.ToString();
+                
+                // initialize the text
+                attackValue.Text = SimulationType.attackTextDictionnary[simulationType];
+                defendValue.Text = SimulationType.defenseTextDictionnary[simulationType];
+            }
         }
 
         // List of property available for the attacker
@@ -107,10 +156,6 @@ namespace BushidoApp {
                 DefenderPropertyList.Add(value.Name);
             }
             DefenderPropertyList.Sort();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e) {
-            NavigationService.GoBack();
         }
 
         // Generate a result table with the value contained in "result"
@@ -216,50 +261,18 @@ namespace BushidoApp {
             }
         }
 
+        // compute the result
         private double[] ComputeResult() {
-            // Create the table for the result
-            double[] result;
             // Create the profile 
             Profile Hiro = new Profile(AttackDices, 0), Bakemono = new Profile(0, DefenceDices);
             Hiro.Treats.Modify(AttackTreats);
             Bakemono.Treats.Modify(DefenceTreats);
-            // Launch the chrono
-            Stopwatch stopWatch = new Stopwatch();
-            // The clock is ticking
-            stopWatch.Start();
-            // Get the result
-
-            ListPickerItem whatRoll = (ListPickerItem)toCompute.SelectedItem;
-            //result = ResultPresentation.Integral(Hiro.Attack(Bakemono, max: 1));
-            int nbRoll = 100000;
-            if (whatRoll.Name.ToString() == "attack") {
-                result = ResultPresentation.Integral(Hiro.Attack(Bakemono, max: nbRoll));
-            } else if (whatRoll.Name.ToString() == "shoot") {
-                result = ResultPresentation.Integral(Hiro.Shoot(Bakemono, DefenceDices, nbRoll, 1));
-            } else if (whatRoll.Name.ToString() == "slMelee") {
-                result = ResultPresentation.Integral(Hiro.SuccessLevel_Melee(Bakemono, max: nbRoll));
-            } else if (whatRoll.Name.ToString() == "slRanged") {
-                result = ResultPresentation.Integral(Hiro.SuccessLevel_Ranged(DefenceDices, max: nbRoll));
-            } else if (whatRoll.Name.ToString() == "slOpposed") {
-                result = ResultPresentation.Integral(Hiro.SuccessLevel_Opposed(Bakemono, max: nbRoll));
-            } else {
-                // whatRoll.Name.ToString() == "slTarget"
-                result = ResultPresentation.Integral(Hiro.SuccessLevel_Opposed(Bakemono, max: nbRoll));
-            }
-
-            // No one moves
-            stopWatch.Stop();
-            TimeSpan ts = stopWatch.Elapsed;
-            // I have finally made a watch!
-            string elapsedTime = String.Format("{0:00}m:{1:00}s:    {2:00}ms",
-                    ts.Minutes, ts.Seconds,
-                    ts.Milliseconds / 10);
             
-            Compute.Content = "Result ? ";
-            //Compute.Content += " / ";
-            //Compute.Content += elapsedTime;
+            // Get the result
+            string whichRoll = toCompute.SelectedItem.ToString();
+            int nbRoll = 100000;
+            double[] result = SimulationType.computeResult(Hiro, Bakemono, whichRoll, nbRoll);
 
-            // Return the result
             return result;
         }
         private void ComputeSimulation(object sender, RoutedEventArgs e) {
@@ -316,7 +329,6 @@ namespace BushidoApp {
             newButton.Width = 100; // 100
             // Test handler
             newButton.Click += new RoutedEventHandler(DeleteProperty);
-
 
             Grid.SetColumn(newButton, 0);
             Grid.SetRow(newButton, row);
